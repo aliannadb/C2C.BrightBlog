@@ -88,11 +88,11 @@ section > h1{
 }
 section > nav > ul {
     display: flex;
-    align-items: center;
+    align-items:center;
+    text-align: center;
     justify-content:space-around;
     list-style: none;
     background:linear-gradient(to bottom, #f0f0f0,#EFEBE9,#FFF3E0);
-
     border-radius: 30px;
     padding: 1em 1em;
     
@@ -103,10 +103,9 @@ section > nav > ul > li > a{
     text-decoration: none;
     display: flex;
     justify-content: space-around;
-    font-size: large;
+    font-size:inherit;
     color:black;
     font-weight: 750;
-    
     padding: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
