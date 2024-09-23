@@ -29,7 +29,6 @@ ul {
 }
 
 
-
 /* this is how you target the body of a header using > */
 body > header{
     background-color:#FBE9E7;
@@ -62,35 +61,50 @@ body > header > nav > ul {
 
 }
 
-body > main article {
-    width: 70%;
-    margin: auto;
+body > main {
+    padding-left: 15%;
+    padding-right: 15%;
 }
-
 #main-content{
     display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    border: 3px solid pink;
-    border-radius: 30px;
-    background-color: #D9D6CD;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 100%;
 }
-img {
+
+#main-content > main{
+    display:block;
+    text-align: left;
+    margin: 1em 1em;
+
+}
+#main-content > main > h1 > p{
+    text-align:center;
+}
+#myImage {
     border-radius: 30px;
+    max-width: 30%;
+    max-height: 30%;
+    object-fit:inherit;
+    display:block;
+    justify-content: space-evenly;
+
+
 }
 
 .button{
     border: 2px solid yellowgreen;
     border-radius: 30px;
     background-color: #7D8E3E;
-    font-size: large;
+    font-size: 20px inherit;
     text-align: center;
     color: white;
     display: block;
     margin: auto;
     justify-content: space-around;
-    width: 200px;
-    height: 35px;
+    max-width: 15vw;
+    max-height: 30vw;
     padding: 0.5em 0.5em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -112,7 +126,8 @@ section > h1{
 }
 section > nav > ul {
     display: flex;
-    align-items: center;
+    align-items:center;
+    text-align: center;
     justify-content:space-around;
     list-style: none;
     background:linear-gradient(to bottom, #f0f0f0,#EFEBE9,#FFF3E0);
@@ -127,10 +142,10 @@ section > nav > ul > li > a{
     text-decoration: none;
     display: flex;
     justify-content: space-around;
-    font-size: large;
+    font-size:inherit;
     color:black;
     font-weight: 750;
-    
+
     padding: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -193,3 +208,15 @@ footer {
     margin: 1em 1em;
 }
 
+#grid-container{
+    display: grid;
+    grid-template-areas: 
+    "main image";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    border: 3px solid pink;
+    border-radius: 30px;
+    background-color: #D9D6CD;
+    justify-content: space-evenly;
+    
+   
+}
