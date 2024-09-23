@@ -5,7 +5,7 @@ body{
   font-weight: <weight>;
   font-style: normal
     margin: 0px;
-    font-size: 5vw;
+    font-size: 10vw;
 }
 #main-header{
     display: flex;
